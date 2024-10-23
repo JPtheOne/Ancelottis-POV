@@ -14,36 +14,36 @@ class App extends React.Component {
     this.state = {
       menuItems: [
         {
-          title: "FUT CENTRAL",
+          title: "Menú",
           page: "futcentral",
           cards: [
             {
               id: "futcentral1",
               type: "large",
               title: {
-                text: "Editar equipo",
-                color: "black",
+                text: "Eurocopa 2024",
+                color: "white",
               },
               tag: {
-                title: "NEW WEEK, NEW REWARDS!",
-                subtitle: "This Weekly Competition is LIVE",
+                title: "España liderando",
+                subtitle: "Click aquí para más",
                 color: "#29bd2b"
               },
-              image: "http://dc.rbsdirect.com.br/imagesrc/24432705.jpg?w=660"
+              image: "https://i.dailymail.co.uk/1s/2024/06/27/15/86648367-0-image-m-6_1719498998631.jpg"
             },
             {
               id: "futcentral2",
               type: "large",
               title: {
-                text: "COPA AMERICA",
+                text: "Copa América 2024",
                 color: "white",
               },
               tag: {
-                title: "CAN MESSI LEAD THE WAY?",
-                subtitle: "This Weekly Competition is LIVE",
+                title: "¿Último título de Messi?",
+                subtitle: "Ver la final en VIVO",
                 color: "goldenrod"
               },
-              image: "https://netaaji.news/wp-content/uploads/2018/06/698067-messi.jpg"
+              image: "https://media.juanfutbol.com/wp-content/uploads/2024/07/JFB_20240711_JFB_178664_Bolavip-Notas-1-2024-07-11T112409.652.jpg"
             },
             {
               id: "futcentral3",
@@ -76,7 +76,7 @@ class App extends React.Component {
           ]
         },
         {
-          title: "SINGLE PLAYER",
+          title: "Análisis",
           page: "single",
           cards: [
             {
@@ -91,7 +91,7 @@ class App extends React.Component {
                 subtitle: "This Weekly Competition is LIVE",
                 color: "#29bd2b"
               },
-              image: "https://media.contentapi.ea.com/content/dam/ea/easports/fifa/fifa-19-home/fifa19_refresh/franchise-hero-tertiary-fifa19-home-update-key-art-xs.jpg"
+              image: "https://pbs.twimg.com/media/GRbHi3_b0AQlHD8.jpg:large"
             },
             {
               id: "single2",
@@ -110,27 +110,7 @@ class App extends React.Component {
           ]
         },
         {
-          title: "ONLINE",
-          page: "online",
-          cards: []
-        },
-        {
-          title: "SQUADS",
-          page: "squads",
-          cards: []
-        },
-        {
-          title: "TRANSFERS",
-          page: "transfers",
-          cards: []
-        },
-        {
-          title: "STORE",
-          page: "store",
-          cards: []
-        },
-        {
-          title: "MY CLUB",
+          title: "Alineación",
           page: "myclub",
           cards: []
         }

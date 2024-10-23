@@ -15,7 +15,7 @@ class CardDetail extends React.Component {
         return (
             <div class="card-detail">
                 <div class="image-container">
-                    <img class="image-container__image" src="http://dc.rbsdirect.com.br/imagesrc/24432705.jpg?w=660"/>
+                    <img class="image-container__image" src="https://image.ondacero.es/clipping/cmsimages01/2024/07/05/9E3B2B8B-FC5D-4378-B820-3AE504DE4ED0/alineaciones-espana-alemania-hoy-eurocopa_98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=high&format=webply"/>
                     <figcaption class="image-container__caption">Caption</figcaption>
                 </div>
                 <div class="content">
