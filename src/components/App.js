@@ -140,6 +140,17 @@ class App extends React.Component {
     console.log("rendering");
     return (
       <Router>
+           <div>
+      <h1>Embedded Website</h1>
+      <iframe
+        src="https://11builder.com/"
+        width="100%"
+        height="600px"
+        style={{ border: 'none' }}
+        title="Embedded Website"
+      ></iframe>
+    </div>
+
         <div className="App">
           <Header></Header>
           <Navbar activePage={this.state.activePage} onPageChange={(e, data) => { this.handlePageChange(e, data) }} items={this.state.menuItems}></Navbar>
