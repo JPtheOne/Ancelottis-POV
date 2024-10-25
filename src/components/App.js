@@ -2,10 +2,8 @@ import React from 'react';
 import './App.css';
 import Header from './Header/Header';
 import Navbar from './Navbar/Navbar';
-import CardDetail from './CardDetail/CardDetail';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import CardsContainer from './CardsContainer/CardsContainer';
-
 
 class App extends React.Component {
 
@@ -44,8 +42,7 @@ class App extends React.Component {
                 color: "goldenrod"
               },
               image: "https://files.antena2.com/antena2/public/styles/imagen_despliegue/public/2024-07/SeleccionArgentinaCopaAmerica.jpg.webp?VersionId=KiEUeF59u6.BdoE0JOaFmUVBlafi0mwB&itok=OuIUEbse"
-            },
-           
+            }
           ]
         },
         {
@@ -79,6 +76,20 @@ class App extends React.Component {
                 color: "#29bd2b"
               },
               image: "https://static1.squarespace.com/static/54d10203e4b0d299700879e5/t/5ccb5b73195cb900011bee32/1556831098332/Fifa2019.png"
+            },
+            {
+              id: "embedded1",
+              type: "embedded",  // El tipo es embedded
+              link: "https://11builder.com/",  // Link dinámico
+              width: "100%",   // Puedes ajustar el tamaño
+              height: "100%"
+            },
+            {
+              id: "embedded2",
+              type: "embedded",  // Otro video, puede ser YouTube
+              link: "https://www.youtube.com/embed/dQw4w9WgXcQ",  
+              width: "100%",   
+              height: "500px"
             }
           ]
         },
@@ -95,17 +106,16 @@ class App extends React.Component {
     this.setState({
       activePage: this.state.menuItems[0].page,
       cards: this.state.menuItems[0].cards
-    })
+    });
 
     this.render();
-
   }
 
   handlePageChange(e, data) {
     this.setState({
       activePage: data.page,
       cards: data.cards
-    })
+    });
     this.render();
   }
 
@@ -113,8 +123,6 @@ class App extends React.Component {
     console.log("rendering");
     return (
       <Router>
-
-
         <div className="App">
           <Header></Header>
           <Navbar activePage={this.state.activePage} onPageChange={(e, data) => { this.handlePageChange(e, data) }} items={this.state.menuItems}></Navbar>
@@ -122,7 +130,6 @@ class App extends React.Component {
             <CardsContainer {...routeProps} cards={this.state.cards} />
           )}
           />
-          <Route path="/detail" component={CardDetail} />
         </div>
       </Router>
     );
