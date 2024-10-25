@@ -49,54 +49,31 @@ class App extends React.Component {
           title: "Análisis",
           page: "single",
           cards: [
-            {
-              id: "single1",
-              type: "large",
-              title: {
-                text: "",
-                color: "#2ae7d5",
-              },
-              tag: {
-                title: "NEW WEEK, NEW REWARDS!",
-                subtitle: "This Weekly Competition is LIVE",
-                color: "#29bd2b"
-              },
-              image: "https://todosalta.com/download/multimedia.normal.b9dad15b8518b7b0.aGhoX25vcm1hbC53ZWJw.webp"
-            },
-            {
-              id: "single2",
-              type: "large",
-              title: {
-                text: "NEW STADIUMS",
-                color: "white"
-              },
-              tag: {
-                title: "Opens in: 4 Hours 2 Mins!",
-                subtitle: "Your Weekend League begins soon",
-                color: "#29bd2b"
-              },
-              image: "https://static1.squarespace.com/static/54d10203e4b0d299700879e5/t/5ccb5b73195cb900011bee32/1556831098332/Fifa2019.png"
-            },
-            {
-              id: "embedded1",
-              type: "embedded",  // El tipo es embedded
-              link: "https://11builder.com/",  // Link dinámico
-              width: "100%",   // Puedes ajustar el tamaño
-              height: "100%"
-            },
+         
+      
             {
               id: "embedded2",
               type: "embedded",  // Otro video, puede ser YouTube
-              link: "https://www.youtube.com/embed/dQw4w9WgXcQ",  
+              link: "https://i.ytimg.com/vi/jGYoelSrzFY/maxresdefault.jpg",  
               width: "100%",   
               height: "500px"
             }
+            
           ]
         },
         {
           title: "Alineación",
           page: "myclub",
-          cards: []
+          cards: [
+            {
+            id: "embedded1",
+            type: "embedded",  // El tipo es embedded
+            link: "https://11builder.com/",  // Link dinámico
+            width: "100%",   // Puedes ajustar el tamaño
+            height: "100%"
+          },
+        ]
+
         }
       ]
     }
