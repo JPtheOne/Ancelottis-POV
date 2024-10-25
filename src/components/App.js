@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Header/Header';
-import Navbar from  './Navbar/Navbar';
+import Navbar from './Navbar/Navbar';
 import CardDetail from './CardDetail/CardDetail';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import CardsContainer from './CardsContainer/CardsContainer';
@@ -43,36 +43,9 @@ class App extends React.Component {
                 subtitle: "Ver la final en VIVO",
                 color: "goldenrod"
               },
-              image: "https://media.juanfutbol.com/wp-content/uploads/2024/07/JFB_20240711_JFB_178664_Bolavip-Notas-1-2024-07-11T112409.652.jpg"
+              image: "https://files.antena2.com/antena2/public/styles/imagen_despliegue/public/2024-07/SeleccionArgentinaCopaAmerica.jpg.webp?VersionId=KiEUeF59u6.BdoE0JOaFmUVBlafi0mwB&itok=OuIUEbse"
             },
-            {
-              id: "futcentral3",
-              type: "large",
-              title: {
-                text: "DIVISION RIVALS",
-                color: "white",
-              },
-              tag: {
-                title: "NEW WEEK, NEW REWARDS!",
-                subtitle: "This Weekly Competition is LIVE",
-                color: "#29bd2b"
-              },
-              image: "https://conteudo.imguol.com.br/c/entretenimento/ab/2018/08/10/fifa-19---neymar-1533917429175_v2_900x506.jpg"
-            },
-            {
-              id: "futcentral4",
-              type: "large",
-              title: {
-                text: "",
-                color: "white",
-              },
-              tag: {
-                title: "",
-                subtitle: "",
-                color: ""
-              },
-              image: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE2ybOb"
-            }
+           
           ]
         },
         {
@@ -83,7 +56,7 @@ class App extends React.Component {
               id: "single1",
               type: "large",
               title: {
-                text: "DIVISION RIVALS",
+                text: "",
                 color: "#2ae7d5",
               },
               tag: {
@@ -91,7 +64,7 @@ class App extends React.Component {
                 subtitle: "This Weekly Competition is LIVE",
                 color: "#29bd2b"
               },
-              image: "https://pbs.twimg.com/media/GRbHi3_b0AQlHD8.jpg:large"
+              image: "https://todosalta.com/download/multimedia.normal.b9dad15b8518b7b0.aGhoX25vcm1hbC53ZWJw.webp"
             },
             {
               id: "single2",
@@ -140,30 +113,21 @@ class App extends React.Component {
     console.log("rendering");
     return (
       <Router>
-           <div>
-      <h1>Embedded Website</h1>
-      <iframe
-        src="https://11builder.com/"
-        width="100%"
-        height="600px"
-        style={{ border: 'none' }}
-        title="Embedded Website"
-      ></iframe>
-    </div>
+
 
         <div className="App">
           <Header></Header>
           <Navbar activePage={this.state.activePage} onPageChange={(e, data) => { this.handlePageChange(e, data) }} items={this.state.menuItems}></Navbar>
           <Route exact path="/home" render={(routeProps) => (
             <CardsContainer {...routeProps} cards={this.state.cards} />
-          )} 
+          )}
           />
           <Route path="/detail" component={CardDetail} />
         </div>
       </Router>
     );
   }
-  
+
 }
 
 export default App;
