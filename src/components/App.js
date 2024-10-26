@@ -53,6 +53,7 @@ class App extends React.Component {
       
             {
               id: "embedded2",
+              title:"Video",
               type: "embedded",  // Otro video, puede ser YouTube
               link: "https://i.ytimg.com/vi/jGYoelSrzFY/maxresdefault.jpg",  
               width: "100%",   
@@ -69,8 +70,9 @@ class App extends React.Component {
             id: "embedded1",
             type: "embedded",  // El tipo es embedded
             link: "https://11builder.com/",  // Link dinámico
-            width: "100%",   // Puedes ajustar el tamaño
-            height: "100%"
+            width: "1500px",   // Puedes ajustar el tamaño
+            height: "900px",  // Puedes ajustar el tamaño
+            title: "ALineación"
           },
         ]
 

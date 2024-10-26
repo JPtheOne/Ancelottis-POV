@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './EmbeddedWebsiteCard.css';
 
-const EmbeddedWebsiteCard = ({ link, width = "100%", height = "600px", title = "Embedded Content" }) => {
+const EmbeddedWebsiteCard = ({ link, width , height , title  }) => {
     const [iframeHeight, setIframeHeight] = useState(height);
 
     const handleLoad = () => {
