@@ -6,7 +6,6 @@ Interfaz de baja fidelidad diseñada en React para nuestra solución DataGol en 
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Despliegue** para conocer cómo desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
@@ -53,7 +52,7 @@ _Una serie de pasos para configurar el entorno de desarrollo._
     npm start
     ```
 
-_Finaliza con una pequeña demo usando el proyecto:_
+
 
 Después de ejecutar estos comandos, el proyecto estará disponible en [http://localhost:3000](http://localhost:3000). Abre tu navegador y accede a esta URL para ver la interfaz en funcionamiento.
 
