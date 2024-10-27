@@ -47,9 +47,8 @@ _Una serie de pasos para configurar el entorno de desarrollo._
 
 
     ```cmd
-    $env:NODE_OPTIONS="--openssl-legacy-provider"
-    npm start
-    ``
+    set NODE_OPTIONS=--openssl-legacy-provider && npm start
+    ```
 
     En **macOS/Linux**:
 
