@@ -1,271 +1,108 @@
-[![npm version](https://badge.fury.io/js/angular2-expandable-list.svg)](https://badge.fury.io/js/angular2-expandable-list)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# DataGol Interfaz
 
-# DataGol
+Interfaz de baja fidelidad diseñada en React para nuestra solución DataGol en el Hackathon ITAM Sports Analytics 2024. 
 
-> Interfaz de baja fidelidad diseñada en React para nuestra solución DataGol en el Hackathon ITAM Sports Analytics 2024.
+## Comenzando 🚀
 
-## Prerequisites
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-This project requires NodeJS (version 8 or later) and NPM.
-[Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
-To make sure you have them available on your machine,
-try running the following command.
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-```sh
-$ npm -v && node -v
-6.4.1
-v8.16.0
+
+### Pre-requisitos 📋
+
+_Que cosas necesitas para instalar el software y como instalarlas_
+
+```
+Este proyecto requiere NodeJS (versión 8 o posterior) y NPM.
+Node y NPM son realmente fáciles de instalar.
+Para asegurarte de que están disponibles en tu máquina, intenta ejecutar el siguiente comando.
 ```
 
-## Table of contents
+### Instalación 🔧
 
-- [Project Name](#project-name)
-  - [Prerequisites](#prerequisites)
-  - [Table of contents](#table-of-contents)
-  - [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-    - [Serving the app](#serving-the-app)
-    - [Running the tests](#running-the-tests)
-    - [Building a distribution version](#building-a-distribution-version)
-    - [Serving the distribution version](#serving-the-distribution-version)
-  - [API](#api)
-    - [useBasicFetch](#usebasicfetch)
-      - [Options](#options)
-    - [fetchData](#fetchdata)
-  - [Contributing](#contributing)
-  - [Credits](#credits)
-  - [Built With](#built-with)
-  - [Versioning](#versioning)
-  - [Authors](#authors)
-  - [License](#license)
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
-## Getting Started
+_Dí cómo será ese paso_
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-## Installation
-
-**BEFORE YOU INSTALL:** please read the [prerequisites](#prerequisites)
-
-Start with cloning this repo on your local machine:
-
-```sh
-$ git clone https://github.com/ORG/PROJECT.git
-$ cd PROJECT
+```
+Da un ejemplo
 ```
 
-To install and set up the library, run:
+_Y repite_
 
-```sh
-$ npm install -S myLib
+```
+hasta finalizar
 ```
 
-Or if you prefer using Yarn:
+_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
-```sh
-$ yarn add --dev myLib
+## Ejecutando las pruebas ⚙️
+
+_Explica como ejecutar las pruebas automatizadas para este sistema_
+
+### Analice las pruebas end-to-end 🔩
+
+_Explica que verifican estas pruebas y por qué_
+
+```
+Da un ejemplo
 ```
 
-## Usage
+### Y las pruebas de estilo de codificación ⌨️
 
-### Serving the app
+_Explica que verifican estas pruebas y por qué_
 
-```sh
-$ npm start
+```
+Da un ejemplo
 ```
 
-### Running the tests
+## Despliegue 📦
 
-```sh
-$ npm test
-```
+_Agrega notas adicionales sobre como hacer deploy_
 
-### Building a distribution version
+## Construido con 🛠️
 
-```sh
-$ npm run build
-```
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
-This task will create a distribution version of the project
-inside your local `dist/` folder
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
+* [Maven](https://maven.apache.org/) - Manejador de dependencias
+* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
 
-### Serving the distribution version
+## Contribuyendo 🖇️
 
-```sh
-$ npm run serve:dist
-```
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
-This will use `lite-server` for servign your already
-generated distribution version of the project.
+## Wiki 📖
 
-*Note* this requires
-[Building a distribution version](#building-a-distribution-version) first.
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
 
-## API
+## Versionado 📌
 
-### useBasicFetch
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
 
-```js
-useBasicFetch(url: string = '', delay: number = 0)
-```
+## Autores ✒️
 
-Supported options and result fields for the `useBasicFetch` hook are listed below.
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-#### Options
+* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
+* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
 
-`url`
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
-| Type | Default value |
-| --- | --- |
-| string | '' |
+## Licencia 📄
 
-If present, the request will be performed as soon as the component is mounted
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-Example:
+## Expresiones de Gratitud 🎁
 
-```tsx
-const MyComponent: React.FC = () => {
-  const { data, error, loading } = useBasicFetch('https://api.icndb.com/jokes/random');
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Da las gracias públicamente 🤓.
+* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
+* etc.
 
-  if (error) {
-    return <p>Error</p>;
-  }
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
 
-  return (
-    <div className="App">
-      <h2>Chuck Norris Joke of the day</h2>
-      {data && data.value && <p>{data.value.joke}</p>}
-    </div>
-  );
-};
-```
-
-`delay`
-
-| Type | Default value | Description |
-| --- | --- | --- |
-| number | 0 | Time in milliseconds |
-
-If present, the request will be delayed by the given amount of time
-
-Example:
-
-```tsx
-type Joke = {
-  value: {
-    id: number;
-    joke: string;
-  };
-};
-
-const MyComponent: React.FC = () => {
-  const { data, error, loading } = useBasicFetch<Joke>('https://api.icndb.com/jokes/random', 2000);
-
-  if (error) {
-    return <p>Error</p>;
-  }
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  return (
-    <div className="App">
-      <h2>Chuck Norris Joke of the day</h2>
-      {data && data.value && <p>{data.value.joke}</p>}
-    </div>
-  );
-};
-```
-
-### fetchData
-
-```js
-fetchData(url: string)
-```
-
-Perform an asynchronous http request against a given url
-
-```tsx
-type Joke = {
-  value: {
-    id: number;
-    joke: string;
-  };
-};
-
-const ChuckNorrisJokes: React.FC = () => {
-  const { data, fetchData, error, loading } = useBasicFetch<Joke>();
-  const [jokeId, setJokeId] = useState(1);
-
-  useEffect(() => {
-    fetchData(`https://api.icndb.com/jokes/${jokeId}`);
-  }, [jokeId, fetchData]);
-
-  const handleNext = () => setJokeId(jokeId + 1);
-
-  if (error) {
-    return <p>Error</p>;
-  }
-
-  const jokeData = data && data.value;
-
-  return (
-    <div className="Comments">
-      {loading && <p>Loading...</p>}
-      {!loading && jokeData && (
-        <div>
-          <p>Joke ID: {jokeData.id}</p>
-          <p>{jokeData.joke}</p>
-        </div>
-      )}
-      {!loading && jokeData && !jokeData.joke && <p>{jokeData}</p>}
-      <button disabled={loading} onClick={handleNext}>
-        Next Joke
-      </button>
-    </div>
-  );
-};
-```
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-1.  Fork it!
-2.  Create your feature branch: `git checkout -b my-new-feature`
-3.  Add your changes: `git add .`
-4.  Commit your changes: `git commit -am 'Add some feature'`
-5.  Push to the branch: `git push origin my-new-feature`
-6.  Submit a pull request :sunglasses:
-
-## Credits
-
-TODO: Write credits
-
-## Built With
-
-* Dropwizard - Bla bla bla
-* Maven - Maybe
-* Atom - ergaerga
-* Love
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **John Doe** - *Initial work* - [JohnDoe](https://github.com/JohnDoe)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-[MIT License](https://andreasonny.mit-license.org/2019) © Andrea SonnY
+---
+⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
