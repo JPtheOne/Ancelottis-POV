@@ -43,7 +43,13 @@ _Una serie de pasos para configurar el entorno de desarrollo._
     ```powershell
     $env:NODE_OPTIONS="--openssl-legacy-provider"
     npm start
-    ```
+    ``
+
+
+    ```cmd
+    $env:NODE_OPTIONS="--openssl-legacy-provider"
+    npm start
+    ``
 
     En **macOS/Linux**:
 
