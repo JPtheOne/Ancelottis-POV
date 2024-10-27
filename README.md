@@ -1,4 +1,4 @@
-# DataGol Interfaz ⚽
+lo# DataGol Interfaz ⚽
 
 Interfaz de baja fidelidad diseñada en React para nuestra solución DataGol en el Hackathon ITAM Sports Analytics 2024. 
 
@@ -55,6 +55,5 @@ _Una serie de pasos para configurar el entorno de desarrollo._
 
 
 Después de ejecutar estos comandos, el proyecto estará disponible en [http://localhost:3000](http://localhost:3000). Abre tu navegador y accede a esta URL para ver la interfaz en funcionamiento.
-
 
 
