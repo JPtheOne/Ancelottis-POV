@@ -26,8 +26,8 @@ _Una serie de pasos para configurar el entorno de desarrollo._
 1. Clona el repositorio:
 
     ```bash
-    git clone https://github.com/tuusuario/tuproyecto.git
-    cd tuproyecto
+    git clone https://github.com/JPtheOne/DataGol-Interfaz
+    cd DataGol-Interfaz
     ```
 
 2. Instala las dependencias del proyecto:
