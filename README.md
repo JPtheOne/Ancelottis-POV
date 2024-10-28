@@ -1,4 +1,4 @@
-lo# DataGol Interfaz ⚽
+# DataGol Interfaz ⚽
 
 Interfaz de baja fidelidad diseñada en React para nuestra solución DataGol en el Hackathon ITAM Sports Analytics 2024. 
 
@@ -40,13 +40,14 @@ _Una serie de pasos para configurar el entorno de desarrollo._
 
     En **Windows**:
 
-    ```powershell
+    PowerShell 
+    ```
     $env:NODE_OPTIONS="--openssl-legacy-provider"
     npm start
-    ``
+    ```
 
-
-    ```cmd
+    cmd
+    ```
     set NODE_OPTIONS=--openssl-legacy-provider && npm start
     ```
 
@@ -60,5 +61,7 @@ _Una serie de pasos para configurar el entorno de desarrollo._
 
 
 Después de ejecutar estos comandos, el proyecto estará disponible en [http://localhost:3000](http://localhost:3000). Abre tu navegador y accede a esta URL para ver la interfaz en funcionamiento.
+<br> Verás algo similar a esto 😊:
+![Interfaz](https://github.com/user-attachments/assets/d430a61b-4e80-4eb1-a4de-d791fcf8ab4e)
 
 
